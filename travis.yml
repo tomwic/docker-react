@@ -8,4 +8,4 @@ services:
   script:
     - docker run -e CI=true tomwic/docker-react npm run test
 
-  language: generic 
+language: generic 
