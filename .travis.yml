@@ -1,7 +1,19 @@
 --- 
+access_key_id: $AWS_ACCESS_KEY
 before_install: "docker build -t tomwic/docker-react -f Dockerfile.dev ."
+deploy: 
+  app: docker-react
+  bucker_name: elasticbeanstalk-eu-central-1-860639283213
+  bucker_path: docker-react
+  env: Docker-env
+  provider: elasticbeantalk
+  region: eu-central-1
 language: generic
 script: "docker run -e CI=true tomwic/docker-react npm run test"
+secret_access_key: 
+  secure: $AWS_SECRET_KEY
 services: docker
 sudo: required
-
+true: 
+  branch: master
+  
