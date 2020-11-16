@@ -8,6 +8,7 @@ deploy:
   env: Docker-env
   provider: elasticbeantalk
   region: eu-central-1
+edge: true
 language: generic
 script: "docker run -e CI=true tomwic/docker-react npm run test"
 secret_access_key: 
