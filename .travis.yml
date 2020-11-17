@@ -1,4 +1,3 @@
---- 
 access_key_id: "$AWS_ACCESS_KEY"
 before_install: "docker build -t tomwic/docker-react -f Dockerfile.dev ."
 deploy: 
