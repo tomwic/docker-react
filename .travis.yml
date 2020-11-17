@@ -4,7 +4,7 @@ deploy:
   app: docker-react
   bucker_name: elasticbeanstalk-eu-central-1-860639283213
   bucker_path: docker-react
-  env: Docker-env
+  env: Docker-react-env
   provider: elasticbeanstalk
   region: eu-central-1
 language: generic
