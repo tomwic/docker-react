@@ -9,7 +9,7 @@ deploy:
   region: eu-central-1
    edge: true
 language: generic
-script: "docker run -e CI=true tomwic/docker-react npm run test"
+script: "docker run -e CI=true tomwic/docker-react npm run test -- --coverage"
 secret_access_key: 
   secure: "$AWS_SECRET_ACCESS_KEY"
 services: docker
