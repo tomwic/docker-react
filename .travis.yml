@@ -1,7 +1,7 @@
 access_key_id: "$AWS_ACCESS_KEY_ID"
 before_install: "docker build -t tomwic/docker-react -f Dockerfile.dev ."
 deploy: 
-  app: docker-react
+  app: docker
   bucker_name: elasticbeanstalk-eu-central-1-860639283213
   bucker_path: docker-react
   env: Docker-react-env
